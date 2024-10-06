@@ -5,6 +5,10 @@ import User from '../models/User.js';
 
 const router = express.Router();
 
+route.get('/', (req, res) => {
+    res.send('Hello, World!');  // For testing purposes, just send a response
+});
+
 // Login
 router.post('/login', async (req, res) => {
     const { username, password } = req.body;

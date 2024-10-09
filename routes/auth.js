@@ -5,7 +5,7 @@ import User from '../models/User.js';
 
 const router = express.Router();
 
-route.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.send('Hello, World!');  // For testing purposes, just send a response
 });
 
